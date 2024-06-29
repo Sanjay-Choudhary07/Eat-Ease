@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Navbar.css'
 function Navbar() {
+  const [menu, setMenu] = useState("Home");
   return (
     <div className='navbar'>
       <div className='leftbar'>
@@ -9,10 +10,10 @@ function Navbar() {
       </div>
       <div className="middlebar">
         <ul className="navbar-menu">
-          <li>Home</li>
-          <li>Menu</li>
-          <li>Mobile App</li>
-          <li>Contact us</li>
+          <li onClick={()=>setMenu("Home")} className ={menu==="Home" ? "active" : " "}>Home</li>
+          <li onClick={()=>setMenu("Menu")} className ={menu==="Menu" ? "active" : " "}>Menu</li>
+          <li onClick={()=>setMenu("Mobile-App")} className ={menu==="Mobile-App" ? "active" : " "}>Mobile-App</li>
+          <li onClick={()=>setMenu("Contact-us")} className ={menu==="Contact-us" ? "active" : " "}>Contact-us</li>
         </ul>
       </div>
       <div className="rightbar">
