@@ -9,7 +9,8 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
     gap: 1.5vw;
     max-width: 50%;
     bottom: 10%;
@@ -31,6 +32,23 @@
     font-weight: 500;
     padding: 1vw 2.3vw;
     background-color: white;
-    font-size: max(1vw,13px);
+    font-size: max(1.3vw,13px);
     border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width:1050px){
+    .header-contnets{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    .header-contnets{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contnets button{
+        padding: 2vw 4vw;
+    }
 }

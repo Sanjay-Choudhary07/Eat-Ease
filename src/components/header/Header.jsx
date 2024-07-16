@@ -8,7 +8,7 @@ const Header = () => {
         <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest indgredients and culinary expertise. Our 
          mission is to satisfy your cravings and elevate your dining experience, one deliciuos meal at a time.   
         </p>
-        <button>Viwe Menu</button>
+        <button>View Menu</button>
         </div> 
     </div>
   )
